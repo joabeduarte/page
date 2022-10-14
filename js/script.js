@@ -2,10 +2,16 @@ if (window.SimpleAnime) {
   new SimpleAnime();
 }
 
+// currículo
 const curriculo = document.querySelector(".curriculo");
 
-function handleCurriculo(event) {
-  alert("Solicitar currículo via E-mail ou Rede Social");
-}
+curriculo.addEventListener("click", () => {
+  alert("Solicitar currículo via e-mail ou rede social");
+});
 
-curriculo.addEventListener("click", handleCurriculo);
+// react
+const react = document.querySelector(".react");
+
+react.addEventListener("click", () => {
+  alert("Certificado não disponível: Curso em andamento");
+});
