@@ -21,10 +21,11 @@
   border: 1px solid transparent;
   transition: 0.3s;
 }
-
-.nav ul li a:hover {
-  border-color: #a9a9a9;
-  /* border-color: #131313; */
+@media (hover: hover) and (pointer: fine) {
+  .nav ul li a:hover {
+    border-color: #a9a9a9;
+    /* border-color: #131313; */
+  }
 }
 
 @media (max-width: 800px) {
@@ -42,5 +43,6 @@
     padding: 2px 5px;
     border: 1px solid transparent;
     transition: 0.3s;
+    
   }
 }
