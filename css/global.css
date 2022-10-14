@@ -62,9 +62,12 @@ a {
   margin-right: 10px;
   transition: width 0.2s;
 }
-.style-li li a:hover:before {
-  width: 18px;
+@media (hover: hover) and (pointer: fine) {
+  .style-li li a:hover:before {
+    width: 18px;
+  }
 }
+
 .style-li li a:hover {
   /* border-color: #a9a9a9; */
 }
