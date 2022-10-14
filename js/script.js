@@ -5,7 +5,7 @@ if (window.SimpleAnime) {
 const curriculo = document.querySelector(".curriculo");
 
 function handleCurriculo(event) {
-  alert("Solicitar via E-mail ou Rede Social");
+  alert("Solicitar currículo via E-mail ou Rede Social");
 }
 
 curriculo.addEventListener("click", handleCurriculo);
