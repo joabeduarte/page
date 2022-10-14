@@ -30,7 +30,11 @@ li {
 a {
   text-decoration: none;
 }
+* {
+  box-sizing: border-box;
+}
 
+/* titulo */
 .title {
   font-size: 5rem;
   text-transform: uppercase;
@@ -38,6 +42,34 @@ a {
   position: relative;
 }
 
+/* before das li's */
+.style-li li a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 6px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.style-li li a::before {
+  cursor: pointer !important;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  background: #e0e0e0;
+  margin-right: 10px;
+  transition: width 0.2s;
+}
+.style-li li a:hover:before {
+  width: 18px;
+}
+.style-li li a:hover {
+  /* border-color: #a9a9a9; */
+}
+
+/* acabou */
 
 @media (max-width: 800px) {
 }

@@ -23,34 +23,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.certificados ul li a {
-  display: inline-block;
-  padding: 5px 6px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  display: flex;
-  align-items: center;
-}
-.certificados ul li a::before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 5px;
-  background: #e0e0e0;
-  margin-right: 10px;
-  transition: width 0.2s;
-}
-.certificados ul li a:hover:before {
-  width: 14px;
-}
-
-.certificados ul li a:last-child:hover {
-  cursor: pointer !important;
-}
-
-.certificados ul li a:hover {
-  border-color: #a9a9a9;
-}
 
 @media (max-width: 900px) {
   .formacao h1 {
@@ -65,7 +37,6 @@
     margin: 0 auto;
   }
 }
-
 @media (max-width: 500px) {
   .formacao {
     grid-template-columns: 1fr;
