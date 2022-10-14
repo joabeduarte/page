@@ -1,0 +1,74 @@
+.formacao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.formacao .title::after {
+  content: "with certificate";
+  position: absolute;
+  font-size: 0.775rem;
+  font-weight: bold;
+  left: 0px;
+  bottom: -8px;
+  color: #090909;
+  letter-spacing: 0.8px;
+}
+
+.certificados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.certificados ul li a {
+  display: inline-block;
+  padding: 5px 6px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.certificados ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 5px;
+  background: #e0e0e0;
+  margin-right: 10px;
+  transition: width 0.2s;
+}
+.certificados ul li a:hover:before {
+  width: 14px;
+}
+
+.certificados ul li a:last-child:hover {
+  cursor: pointer !important;
+}
+
+.certificados ul li a:hover {
+  border-color: #a9a9a9;
+}
+
+@media (max-width: 900px) {
+  .formacao h1 {
+    font-size: 4.5rem;
+    margin: 0 auto;
+  }
+  .formacao h1 span {
+    display: none;
+  }
+  .certificados {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
