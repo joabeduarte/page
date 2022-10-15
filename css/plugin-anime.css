@@ -23,6 +23,6 @@
 
 @media (max-width: 600px) {
   .js .anime {
-    transition: transform 2s, opacity 2s;
+    transition: transform 3s, opacity 3s;
   }
 }
